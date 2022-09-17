@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.waitingCard {
+    max-width: 375px;
+    min-height: 650px;
+    background-color: #FCF9ED;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.innerCard {
+    width: 300px;
+    height: 500px;
+    padding: 30px;
+    text-align: center;
+    background-color: #665C84;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.wating {
+    color: #FF7657;
+    font-size: 30px;
+    font-family: "lily script one";
+}
+
+.podium {
+    color: #FF7657;
+    font-size: 28px;
+    font-family: "lily script one";
+}
+
+.choice {
+    font-family: "Open Sans";
+    color: #FF7657;
+    font-size: 80px;
+}

@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One:regular);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcf9ed;
+    position: relative;
+}
+
+/* !Head */
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ff7657;
+    flex: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8ffe5;
+    color: #665C84;
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: "Lily Script one";
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.logout {
+    background-color: #f8ffe5;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Lily Script One";
+    color: #665C84;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.allQuiz {
+    font-family: "Lily Script One";
+    color: #ff7657;
+    font-size: 40px;
+
+
+}
+
+/* !questions div start */
+
+.questions {
+    flex: 9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question {
+    width: 60%;
+    min-height: 160px;
+    background-color: #ff7657;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1000px;
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* !left part */
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Open Sans";
+    color: #f8ffe5;
+
+
+
+}
+
+.title {
+    display: flex;
+    gap: 20px;
+
+}
+
+.teacher {
+    display: flex;
+    gap: 20px;
+}
+
+/* !right part card */
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.right button {
+    border: none;
+    color: #665C84;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #f8ffe5;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Open Sans";
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+.newQuestion {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff7657;
+    font-family: "lily script one";
+    color: ;
+    margin-top: 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #665C84;
+
+
+}
+
+.newQuestion:hover {
+    background-color: #ff765786;
+}

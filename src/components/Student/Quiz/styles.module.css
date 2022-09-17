@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.questionCard {
+    width: 500px;
+    height: 800px;
+    background-color: #FCF9ED;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.timer {
+    width: 80%;
+    background-color: aliceblue;
+}
+
+.question {
+    color: #FFBA5A;
+    font-family: "open sans";
+}
+
+.options {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.option {
+    width: 90%;
+    background-color: #FF7657;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    font-family: "open sans";
+    font-weight: 600;
+    color: #FCF9ED;
+}

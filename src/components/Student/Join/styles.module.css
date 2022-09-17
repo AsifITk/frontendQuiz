@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 500px;
+    height: 800px;
+    background-color: #FCF9ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pinDiv {
+    background-color: #FF7657;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 14px;
+
+}
+
+.pinHead {
+    background-color: #FFBA5A;
+    width: 250px;
+    height: 50px;
+    border: none;
+
+    border-radius: 30px;
+    font-family: "lily script one";
+    font-size: 40px;
+    color: #665C84;
+}
+
+
+.pin {
+    border: none;
+    background-color: #FCF9ED;
+    height: 50px;
+    border-radius: 14px;
+}
+
+.enter {
+    width: 200px;
+    height: 50px;
+    color: #FCF9ED;
+    background-color: #665C84;
+    border-radius: 14px;
+
+    border: none;
+}

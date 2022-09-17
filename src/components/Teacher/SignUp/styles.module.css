@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    background-color: #ff7657;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.innerCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #f5ebeb;
+    height: 80%;
+    width: 80%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.innerCard h1 {
+    font-family: "Lily script one";
+    font-size: 50px;
+    color: #ff7657;
+    width: 80%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+
+}
+
+.innerCard input {
+    width: 90%;
+    border: none;
+    height: 10%;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Open Sans";
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.innerCard input:focus {
+    outline: 1px solid #ff765741;
+}
+
+.innerCard button {
+    width: 90%;
+    border: none;
+    height: 10%;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #665c84;
+    color: #ff7657;
+    font-family: "Lily script one";
+    font-size: 45px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.innerCard button:hover {
+    color: #665c84;
+
+    background-color: #ff7657;
+}
+
+.right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    align-self: flex-end;
+}
+
+.blob img {
+    width: 1000px;
+}

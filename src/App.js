@@ -8,6 +8,7 @@ import EditQuestion from './components/Teacher/Editquestion'
 import Join from './components/Student/Join';
 import Quiz from './components/Student/Quiz';
 import Waiting from './components/Student/waiting';
+import Edit from './components/Teacher/Editquestion/EditPage';
 
 function App() {
   return (
@@ -16,9 +17,11 @@ function App() {
         <Route path="/teacher"  >
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<SignUp />} />
-          <Route path="addquestion" element={<AddQuestion />} />
-          <Route path="addquestion" element={<AddQuestion />} />
-          <Route path="editquestion" element={<EditQuestion />} />
+          <Route path="addQuiz" element={<AddQuestion />} />
+
+          <Route path="editquestion" element={<EditQuestion />} >
+            <Route index element={<Edit />} />
+          </Route  >
 
         </Route>
         <Route path="/student"  >

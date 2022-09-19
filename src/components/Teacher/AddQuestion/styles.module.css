@@ -9,7 +9,7 @@
 
 .container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +71,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 10px;
 }
 
 .question {
@@ -79,8 +80,9 @@
     background-color: #ff7657;
     border-radius: 10px;
     display: flex;
-    justify-content: space-around;
-    gap: 1000px;
+
+    justify-content: space-between;
+    gap: 100px;
     padding: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -140,7 +142,7 @@
     border: none;
     background-color: #ff7657;
     font-family: "lily script one";
-    color: ;
+    color: red;
     margin-top: 60px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #665C84;

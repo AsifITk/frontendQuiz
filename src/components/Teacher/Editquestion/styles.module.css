@@ -10,7 +10,7 @@
 
 .container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,6 +86,20 @@
 
 }
 
+.left h3 {
+    font-family: "lily script one";
+    color: tomato;
+    font-size: 40px;
+}
+
+.count {
+    background-color: tomato;
+    border-color: tomato;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
 .questions {
     background-color: #665C84;
     width: 80%;
@@ -95,15 +109,19 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 30px;
+    padding: 15px;
     gap: 40px;
+    color: white;
+
+
 
 }
 
 .question {
     background-color: #ff7657;
-    width: 90%;
-    height: 200px;
+    min-width: 90%;
+    min-height: 200px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -212,5 +230,10 @@
     color: #665C84;
 
 
+}
+
+.delete {
+    background-color: #ff7657;
+    border: none;
 
 }

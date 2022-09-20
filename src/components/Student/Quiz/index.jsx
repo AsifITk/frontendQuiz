@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import styles from './styles.module.css'
+import socket from '../../../socket';
 
 
 function Quiz() {

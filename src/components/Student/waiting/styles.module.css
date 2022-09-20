@@ -11,51 +11,137 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FF7657;
+
+
+}
+
+.logo {
+    align-self: flex-start;
+    background-color: black;
+
+}
+
+.watingCard {
+    min-width: 1000px;
+    background-color: #FFBA5A;
+    height: 75%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-arounds;
+    gap: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.left {
+    flex: 1;
+    display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-.waitingCard {
-    max-width: 375px;
-    min-height: 650px;
-    background-color: #FCF9ED;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: column;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    gap: 20px;
 }
 
-.innerCard {
-    width: 300px;
-    height: 500px;
-    padding: 30px;
-    text-align: center;
+
+
+.leftHead {
     background-color: #665C84;
+    border: none;
+    min-width: 400px;
+    height: 80px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    font-family: "lily script one";
+    font-size: 40px;
+    color: #F9FEE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
-.wating {
-    color: #FF7657;
-    font-size: 30px;
+.userName {
+    background-color: #F9FEE8;
+    border: none;
+    min-width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    font-family: "open sans";
+    font-weight: 700;
+    color: #665C84;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+
+}
+
+
+.right {
+    flex: 1;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.qrCode {
+
+    background-color: wheat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pinText {
+    background-color: #665C84;
+    color: #FFBA5A;
+    min-width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "open sans";
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+
+}
+
+.pin {
+    background-color: #665C84;
+    color: #FFBA5A;
+    min-width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "open sans";
+    font-weight: bold;
+
+}
+
+.startDiv {
+    align-self: flex-end;
+    position: relative;
+    right: 800px;
+    bottom: 20px;
+}
+
+.startBtn {
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #F9FEE8;
+    color: #665C84;
+    border: none;
     font-family: "lily script one";
-}
+    font-size: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-.podium {
-    color: #FF7657;
-    font-size: 28px;
-    font-family: "lily script one";
-}
-
-.choice {
-    font-family: "Open Sans";
-    color: #FF7657;
-    font-size: 80px;
 }

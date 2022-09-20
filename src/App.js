@@ -9,17 +9,21 @@ import Join from './components/Student/Join';
 import Quiz from './components/Student/Quiz';
 import Waiting from './components/Student/waiting';
 import Edit from './components/Teacher/Editquestion/EditPage';
+import Quizpage from './components/Teacher/QuizPage';
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/teacher"  >
-          <Route path="login" element={<Login />} />
-          <Route path="signup" element={<SignUp />} />
-          <Route path="addQuiz" element={<AddQuestion />} />
+        <Route path="/"  >
+          <Route index element={<Login />} />
+          <Route path="/teacher/signup" element={<SignUp />} />
+          <Route path="/teacher/addQuiz" element={<AddQuestion />} />
+          <Route path="/teacher/wait" element={<Waiting />} />
+          <Route path="/teacher/quiz" element={<Quizpage />} />
 
-          <Route path="editquestion" element={<EditQuestion />} >
+          <Route path="/teacher/editquestion" element={<EditQuestion />} >
             <Route index element={<Edit />} />
           </Route  >
 

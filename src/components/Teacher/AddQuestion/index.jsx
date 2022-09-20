@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useId, useState } from "react";
 import styles from "./styles.module.css";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -8,6 +8,9 @@ import TextField from "@mui/material/TextField";
 import { useNavigate } from "react-router-dom";
 import Stack from '@mui/material/Stack';
 import CircularProgress from '@mui/material/CircularProgress';
+import { io } from "socket.io-client";
+import socket from "../../../socket";
+import { nanoid } from 'nanoid'
 const style = {
     position: "absolute",
     top: "50%",
@@ -46,6 +49,7 @@ function AddQuestions() {
     let teacherId = JSON.parse(localStorage.getItem("testObject")).teacher._id;
     let goto = useNavigate();
 
+    const roomId = useId();
 
 
 
@@ -145,6 +149,17 @@ function AddQuestions() {
 
         getData(teacherId);
 
+
+        // // !new a room
+        // socket.on("rooms", ({ rooms }) => {
+        //     console.log(rooms)
+        // })
+        // // !joineed students 
+        // socket.on("newStudent", ({ id, name }) => {
+        //     console.log(id, name)
+        // })
+        // //!
+
     }, [])
 
 
@@ -218,7 +233,15 @@ function AddQuestions() {
                             }}><img src="/images/🦆 icon _trash_.svg" alt="" /></button>
                             <button className={styles.edit} onClick={() => { goto("/teacher/editquestion", { state: quiz }) }}>Edit</button>
                             {/* navigate('/other-page', { state: { username: 'user', password: '696' } }); */}
-                            <button className={styles.start}>Start</button>
+                            <button className={styles.start} onClick={() => {
+                                socket.emit("newRoom", {
+                                    roomId: roomId,
+                                    question: quiz
+
+                                })
+                                goto("/teacher/wait", { state: { roomId: roomId, quiz: quiz } })
+
+                            }}  >Start</button>
                         </div>
                     </div>)
 

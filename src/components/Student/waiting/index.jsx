@@ -85,7 +85,7 @@ function Waiting() {
                         <QRCode value={roomId} />
                     </div>
                     <button className={styles.pinText}>Game Pin</button>
-                    <button className={styles.pin}>2132847</button>
+                    <button className={styles.pin}>{roomId}</button>
                 </div>
             </div>
             <div className={styles.startDiv}>
